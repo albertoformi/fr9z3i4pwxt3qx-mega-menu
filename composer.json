@@ -1,0 +1,16 @@
+{
+    "name": "albertoformi/fR9z3I4PWXT3qx-mega-menu",
+    "description": "",
+    "keywords": ["wordpress", "plugin"],
+    "homepage": "https://github.com/albertoformi/fR9z3I4PWXT3qx-mega-menu",
+    "authors": [
+      {
+        "name": "dv mega menu for composer",
+        "homepage": "https://github.com/albertoformi/fR9z3I4PWXT3qx-mega-menu"
+      }
+    ],
+    "type": "wordpress-plugin",
+    "require": {
+      "php": ">=8.0"
+    }
+  }

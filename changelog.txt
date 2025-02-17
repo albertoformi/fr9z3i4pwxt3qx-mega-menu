@@ -1,0 +1,385 @@
+/* CHANGELOG */
+VERSION 3.5.3.6 - 15/10/24
+* FIX - Plugin updater cache fix
+*
+VERSION 3.5.3.5 - 11/10/24
+* MOD - Update to license validation
+*
+VERSION 3.5.3.4 - 10/10/24
+* FIX - Minor cases, fatal error when our server blocks the license check. Added code to avoid fatal error if the block happens and an empty response is returned
+*
+VERSION 3.5.3.3 - 08/10/24
+* MOD - Modified the check for license key to our website to only check every 24 hours if no key is added 
+*
+VERSION 3.5.3.2 - 07/10/24
+* FIX - "Change top position on scroll?" issue
+* FIX - Double tap was not working when "stop click through" is unchecked (on mobile)
+* FIX - Click to activate Menu, overlay would not go away when clicking it to close
+* FIX - Tooltip adjust left was not working
+*
+VERSION 3.5.3.1 - 09/08/24
+* FIX - Fix tooltip issue
+* FIX - Position issue
+*
+VERSION 3.5.3 - 15/07/24
+* FIX - Color Picker conflict with gridbuilder
+* FIX - Menu Entrance Animation issue
+* FIX - MarketPlace issue
+* FIX - Blank Page Template Menu module issue
+* FIX - Hide opened menu when click other menu item
+*
+VERSION 3.5.2 - 19/03/24
+* FIX - Mega Drop-down icons not working
+* FIX - PHP 8 warning
+* FIX - Flush Permalinks on activation and deactivation to avoid empty layouts in the Divi Library
+*
+VERSION 3.5.1.1 - 23/10/23
+* FIX - Vertical Tabs not changing on hover 
+* FIX - Overflow issue (missing triangle)
+*
+VERSION 3.5.1 - 12/10/23
+* NEW ADDITION - Setting to define max height for overflow scroll bar - Mega Menu Settings > General > Menu Overflow Breakpoint/Max Height 
+* FIX - PHP 8 error
+* FIX - ipad landscape mode when changing orientation or when hover was not working
+* FIX - Updated license page title
+* FIX - Vertical Tabs click, would not hide content when hovering other title
+* FIX - Header menu: "Oops" error no longer appears when menu settings differ from header.
+* FIX - Mega Menu: position no longer affected when Theme Builder header has multiple menus.
+* FIX - Tooltip: close hover delay now works properly.
+* FIX - IOS on load and collapsible menu is not working well
+* FIX - Disable click through on desktop and when resize window to mobile, it wont open
+*
+VERSION 3.5 - 16/03/23
+* MOD - When parent click through on mobile is unchecked (so you can click through to parent) - only open mega menu when you click on the arrow (do not go through to parent)
+* FIX/MOD - close other Mega Menus when you click on another on mobile
+* FIX/MOD - vertical tabs, make it stack from 980px and below
+* FIX - Compatibility issue with Monarch plugin
+* FIX - Display Message for Ray ID
+* FIX - Extra css was affecting arrows at wp backoffice
+* FIX - Uncaught TypeError unserialize compatibility for PHP 8.1
+* FIX - Add help videos for all modules at Divi Mega Menu
+* FIX - Extra spacing when mega menu is opened after being logged in
+* FIX - Mega-menu failed to recognize the position if more than one menu was at the theme builder
+* FIX - Mega menu shows submenu items and mega menu at the same time
+* FIX - Mega menu was not validating the navigational header setting
+* FIX - Mega Menu not correctly positioned on mobile
+* FIX - Mega menu click on mobile was prevented by tooltip mode script
+* FIX - Close on scroll setting is not working on mobile
+* FIX - Mega Menu should autoclose if hamburger icon is clicked on mobile
+* FIX - Stop Click Through is creating a jumping effect
+* FIX - Desktop header fixed not working as expected
+* FIX - Mega Menu is not accessible when height is larger than mobile screen
+* FIX - Unnecessary padding top 0px at the mega menu 
+* FIX - Stop link from working for .5 second after closing mega menu with close icon
+* FIX - php error log
+* FIX - "Stop Click Through" for Mobile setting removes all url links from menu ittem
+* FIX - Stop video when close the menu
+* FIX - CSS on CPT pages were being overwritten by Divi style-cpt.css
+* FIX - Veritcal Tabs li was not full width on CPT pages
+* FIX - Close icon position was way off for some
+* FIX - Overlay background flickering/not working when using theme builder header
+*
+VERSION 3.4 - 02/11/22
+* NEW ADDITION - Vertical Tabs, option to add images before the tab navigation
+* NEW ADDITION - Settings to:
+        - Adjust mega menu positions on scroll (from top)
+        - Adjust mega menu positions on mobile (from top)
+* MOD - Check for class so when we remove license for Elegant marketplace, there wont be a fatal error again when accessng our settings pages
+* FIX - JS error when no header
+* FIX - admin CSS conflict
+* FIX - overlay not fullwidth
+* FIX - Mega Menu on Mobile doesn't open submenu
+* FIX - Fix Elegant Theme subscription check issue
+*
+VERSION 3.3.3 - 26/08/22
+* FIX - Veritcal Tabs link was not working
+* FIX - Vertical Tabs styling (from dynamic modules) - forced load Divi Tabs CSS
+*
+VERSION 3.3.2 - 18/08/22
+* MOD - Added slidedown animation back in entrance animation
+* MOD - Added some CSS to change drop down position and arrow to left with RTL languages
+* FIX - Drop Down module php error
+* FIX - Mega Tab style issue
+* FIX - License key deactivate issue
+*
+VERSION 3.3.1 - 01/03/22
+* FIX - License section was removed
+*
+VERSION 3.3 - 24/02/22
+* NEW ADDITION - Added option to use underline as well as triangle (only on menu item)
+* MOD - Stop JS code if in Visual Builder
+* FIX - Remove triangle before on menu when closing the menu with close icon
+* FIX - Adjust from left not working well
+* FIX - Ipad click was not working
+* FIX - PHP warning
+* FIX - Mega Drop Down CSS not overwriting default on some cases
+*
+VERSION 3.2 - 29/06/21
+* MOD - When click, it will now close the menu when clicking on the menu link again
+* FIX - When click submenu, menu is closed
+* FIX - JS error when adding a new menu that is not added on the site
+*
+VERSION 3.1 - 07/05/21
+* NEW ADDITON - Setting to choose the delay time to make the mega menu appear
+* FIX - Comment out console.logs
+* FIX - Menu is closing when click any form element within the menu
+*
+VERSION 3.0.4 - 12/04/21
+* MOD - Updated settings with our branding
+* MOD - Added settings for the drop down module to style the parent and child items more
+* FIX - Detect main Divi header and fix it on scroll
+* FIX - Divi fixed header and the dmm-overlay
+* FIX - link to license from notice
+*
+VERSION 3.0.3.2 - 02/03/21
+* FIX - Fixed click menu - close other 
+* FIX - Better positioning of the mega menu
+*
+VERSION 3.0.3.1 - 16/02/21
+* FIX - Fixed vertical tabs not working
+*
+VERSION 3.0.3 - 04/02/21
+* MOD - New setting to disable on mobile 
+* FIX - JS error
+*
+VERSION 3.0.2 - 03/02/21
+* FIX - CSS conflict with third party slider plugin 
+* FIX - Move left JS was not working properly (fine tune)]
+* FIX - ET Animated caused modules/rows to not show
+* FIX - PHP notice error
+*
+VERSION 3.0.1 - 29/01/21
+* FIX - JS error in WP admin
+* FIX - Visual CSS of Mega Menu
+*
+VERSION 3.0 - 26/01/21
+IMPORTANT = PLEASE CREATE A STAGING SITE TO TEST FIRST
+* NEW ADDITION - Setting to close the menu if clicked to activate and scrolling down the page
+* MOD - Rewrote our JS to remove a lot of code not needed to make it work better and quicker
+* MOD - Now you can click on the menu and it will close the menu as well
+* MOD - Changed CSS structure to avoid conflict with other elements on the page
+* FIX - issue with product theme builder mega menu not working well
+*
+VERSION 2.2.9.1 - 21/12/2020
+* FIX - desktop dropdown conflict
+*
+VERSION 2.2.9 - 16/12/2020
+* FIX - Fixed issue with save and load rows
+* FIX - Issue with position with newest Divi update
+* FIX - removed titan generated css
+* FIX - Make it so prevent defauilt on click to activate
+*
+VERSION 2.2.8.1 - 22/09/2020
+* FIX - Fixed code that prevented click through on desktop
+* FIX - CSS hiding the mobile settings
+* FIX - Mega drop down CSS issue
+*
+VERSION 2.2.8 - 15/09/2020
+* FIX - Fixed continuous call of js code
+* MOD - give access to divi engine menu for only admin users
+* ADD - Ajax Mega Menu
+*
+VERSION 2.2.7.2 - 22/07/2020
+* FIX - Conflict with Divi Machine
+*
+VERSION 2.2.7.1 - 21/07/2020
+* FIX - Conflict with Divi Machine
+*
+VERSION 2.2.7 - 17/07/2020
+* MOD - Determine if tabs are outside the window and if they are, slick to the edge
+* FIX - Fixed mega tabs when there are multiple translations
+*
+VERSION 2.2.6 - 01/06/2020
+* MOD - Added option to disable the mega menus on mobile
+* MOD - Added option to choose the menu on mobile if using multiple menus (theme builder)
+* MOD - Added option to choose where you want the triangle, on the menu link or the mega menu
+* MOD - Added code to check for custom identifier and if not, cannot save the mega menu
+* MOD - Mega Tabs: Added option to add the tabs links, this will add a URL to the tab title if clicked
+* MOD - Added option to make the Mega Menu fullwidth
+* FIX - Fixed issue with closing the tooltip using the X icon
+*
+VERSION 2.2.5 - 02/06/2020
+* MOD - Added option to fine-tune the position from the top on mobile
+* MOD - Drop down module, made it work well on mobile
+* FIX - Removed box shadow under menu
+*
+VERSION 2.2.4 - 01/04/2020
+* COMPATIBILITY - Wordpress 5.4
+* MOD - Added option top specify the breakpoint for mobile menu
+* MOD - Added option to set the time for the menu to go away when hovering - setting is called: Hover Delay Time
+* MOD - Made the mega menu post not public query - you might have to go into Divi > Theme Options > Builder and enable Mega Menu so the builder works
+* MOD - Made it so on mobile when you open anbother menu, it will close the others.
+* MOD - Removed overlay on mobile
+* FIX - When hovering and going back to the menu, it was animating again
+*
+VERSION 2.2.3 - 17/03/2020
+* MOD - titan framework missing file
+*
+VERSION 2.2.2 - 16/03/2020
+* MOD - Changed js so that it does not remove the overlay when hovering from one item to the next
+* MOD - Added slidedown css animation to the menu
+*
+VERSION 2.2.1 - 06/03/2020
+* MOD - titan framework missing file
+* MOD - Flush permalinks when installing so to fix the Divi Builder not loading
+*
+VERSION 2.2 - 24/02/2020
+[BIG UPDATE - Please backup to make sure, should be fine but want to safeguard you all]
+* MOD - Moved license key to tabs
+* MOD - Changed CSS delivery so it is less code inline
+* SECURITY - Improved PHP security code
+* MOD - Hover delay by half a second so when you hover down beyond the a link it will still show
+* FIX - Fixed resizing mega menu size when going to mobile to desktop
+* FIX - Fixed issue where the triangles before would be double in some cases
+*
+VERSION 2.1.1 - 18/02/2020
+* NEW ADDITION - Tooltip. You can now use Divi Mega Menu as a tooltip on your content and not just in a menu
+* MOD - Added another header style - maybe default isnt working well you can use "Theme Builder Alternative"
+* MOD - Added option to choose if the menu is fixed with the custom Divi 4 headers - in Mega Menu Settings
+* MOD - Added ability to move triangle left and right
+* FIX - triangle not showing
+* FIX - adding padding for the drop arrow
+* FIX - Builder not loading sometimes
+*
+VERSION 2.1 - 10/01/2020
+* FIX - hover toggles would open up - conflict with our new tabs module. Fixed now.
+*
+VERSION 2.0 - 08/01/2020
+* NEW ADDITION - Added new module - "Mega Tabs", this will give you the ability to have vertical tabs
+* NEW ADDITION - added ability to open the menu via click instead of hover.
+* NEW ADDITION - If using click, you can add a close icon
+* NEW ADDITION - Added ability to fine tune the menu vertically, move it up and down.
+* NEW ADDITION - Added ability to add an overlay behind the mega menus
+* MOD - Added JS to adapt the width of the menu when changing browser width
+* FIX - Fixed max width of the Mega Drop-down module
+*
+VERSION 1.3.1 - 11/12/19
+* MOD - Added the class "et-hover" for menu link when you are hovering over the mega menu item
+* FIX - Error enqueuing css
+* FIX - Extra compatibility
+*
+VERSION 1.3 - 13/11/19
+* COMPATIBILITY - Full Divi 4
+* FIX - Fixed issue with breaking the visual builder.
+*
+VERSION 1.2.9 - 11/11/19
+* FIX - Custom button style was not working
+*
+VERSION 1.2.8 - 08/11/19
+* MOD - Compatibility with Divi 4 header and when it is fixed in particular
+* FIX - Update check on multisite not checking properly
+*
+VERSION 1.2.7 - 24/10/19
+* MOD - added ability to change the distance of the triangle above the mega menu. if you leave it as 0 - we will change it automatically.
+* FIX - Removed Select2 js in admin as was causing conflict
+* FIX - CSS not rendering on some category pages
+*
+VERSION 1.2.6 - 21/10/19
+* FIX - HTML issue causing divi css to get messed up
+*
+VERSION 1.2.5 - 21/10/19
+* COMPATIBILITY - Better Divi 4 compatibility when using a custom footer
+*
+VERSION 1.2.4 - 18/10/19
+* COMPATIBILITY - Compatibility with Divi 4 custom headers - just select default instead of having to choose the type of menu
+* COMPATIBILITY - Compatibility with Mhmm. Mighty Header & Menu Maker
+* MOD - Added option to select Mhmm. Mighty Header & Menu Maker as your header of choice
+* FIX - Fixed some errors
+* FIX - Fixed css not minifying
+*
+VERSION 1.2.3 - 08/10/19
+* FIX - Fixed conflict with relative menu and Divi Mobile
+*
+VERSION 1.2.2 - 07/10/19
+* MOD - Added option to choose what type of header you are using, for example if you are using a full width module instead of the default Divi menu you can choose this so it works - Mega menu Settings > Header Style.
+* FIX - Fixed issue with conflict with Divi Mobile
+* FIX - Issue with mega menu being too high when having a centered menu
+*
+VERSION 1.2.1 - 04/09/19
+* FIX - code error
+*
+VERSION 1.2 - 04/09/19
+* NEW ADDITION - New module added - Mega Drop-down - this will add a specific menu to the mega menu and can drop down - more here: https://youtu.be/4EZlrLh261U
+* MOD - Reordered code to be more efficient in development
+* FIX - Fixed issue when top header was active, it would not go down enough on mobile
+* FIX - Fixed issue on some cases slowing the builder down on VB
+*
+VERSION 1.1.2 23/07/19
+* MOD - Added ability to stop or allow click through on mobile
+*
+VERSION 1.1.1 02/07/19
+* FIX - Fixed issue with position of the mega menu on mobile
+* FIX - Issue where if you have a mega menu but not added to your menu in appearance, it would cause the other menu items to not show
+*
+VERSION 1.1
+* MOD - Added ability to change where the mega menu appears - you can change it to be relative to the parent menu item and then fine tune it left and right
+* New Addition - Added ability to add a triangle before the mega menu item
+*
+VERSION 1.0.8.4
+* FIX - JS conflict issues
+*
+VERSION 1.0.8.3
+* MOD - Added ability to choose if you want a click through or not. It is in Divi Mega Menu Settings called "Stop click through to parent menu items?".
+* FIX - Better JS delivery so visual builder is smoother.
+*
+VERSION 1.0.8.2
+* MOD - Modified JS so that it does not stop clicking through to the parent menu item
+*
+VERSION 1.0.8.1
+* FIX - Error with VB not working.
+*
+VERSION 1.0.8
+* MOD - Changed the way it outputs CSS and JS, it will minify all the scripts before to improve loading time.
+* MOD - Changed code to avoid the menu jumping on initial load (where it adds the arrow in)
+* FIX - Fixed issue where some modules do not show like the portfolio module.
+*
+VERSION 1.0.7.1
+* FIX - small JS error causing issues in FireFox
+*
+VERSION 1.0.7
+* FIX - Fixed issue where the menu would not open on tablet landscape
+* Better checking for future updates
+*
+VERSION 1.0.6.3
+* FIX - Fixed visual builder not working on the Mega Menu's
+*
+VERSION 1.0.6.2
+* NEW ADDITION - Added new feature to set the custom width of the mega menu
+* FIX - fixed the issue where the custom css from the builder was not working on some modules. Make sure you have "do_action( 'et_after_main_content' );" in your footer.php file at the top
+*
+VERSION 1.0.6.1
+* MOD/FIX - Code change from the last update - some sites it caused the custom CSS to not work - it now will be fine!
+*
+VERSION 1.0.6
+* MAJOR MOD - changed the javascript so that it doesnt affect none mega menu items - please take a backup in case it doesnt work for you but the code is all the same just only targeting your mega menu classes so should be fine :D
+*
+VERSION 1.0.5
+* FIX - Fixed issue of mobile menu items not bein clickable that are not Mega Menu's.
+* FIX - Changed where the we position the mega menu from the right to look at #top-menu-nav instead of .et_menu_container - this will fix issues of padding but check after and before update to make sure it works.
+*
+VERSION 1.0.4
+* IMPORTANT - After updating, go to Divi > Theme options > Builder press "clear" next to the static CSS file generation.
+* FIX - adding padding on top of the mega menu so that if you have a border on the primary menu, the hover still works.
+* MODIFICATION - Changed HTML so that it is hidden from the initial load and doesn't wait till CSS has loaded.
+* MODIFICATION - Changed js so that the parent menu link is not changed to "#" on the desktop.
+* NEW ADDITION - Added a new menu under Divi Engine called "Mega Menu Settings", here we will house all the settings that are not related to each individual mega menu.
+* NEW ADDITION - Added compatibility for a fixed mobile menu. To enable this, go to Divi Engine > Mega Menu Settings and check the box there.
+* FIX - Fixed issue of the visual builder not working. We have had to change where we put the mega menu from the top of the website to the bottom - this way the visual builder looks for the page itself and not the mega menu. You may have a CSS issue if you are using Divi's Static CSS File Generation. To fix, go to Divi theme options, to the Builder tab and click "clear" next to Static CSS File Generation. Please note that you cant see the mega menu in the visual builder because of conflict.
+*
+VERSION 1.0.3
+* FIX - Changed code to fix the alignment issue on iPhone.
+*
+VERSION 1.0.2
+* Changed the way to works out the heights
+* Added box shadow under menu
+*
+VERSION 0.4
+* Modified to js file to change:
+        - Targeting only the menu items that you have added a css option to.
+        - Position of the menu relative to the right hand side
+        - Taken into consideration the wp admin menu bar when position the mega menu from the top
+        - Removed padding: 0 and margin: 0 from the mega menu, you change the size of the padding
+        - Added css to make the mega menu 100% from 980px screen wide and down
+        - Added js min file to load
+
+*/
