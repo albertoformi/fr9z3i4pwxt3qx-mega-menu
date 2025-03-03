@@ -74,7 +74,7 @@ if ($mydata['mega_menu_injection_method'] == "ajax") {
     include(DE_DMM_PATH . '/lib/mega-menu-default.php');
 
     function load_mm_2_scripts(){
-        wp_enqueue_script( 'divi-mega-menu-js', plugins_url() . '/divi-mega-menu/scripts/divi-mega-menu.min.js', array('jquery'), DE_DMM_VERSION, true );
+        wp_enqueue_script( 'divi-mega-menu-js', plugins_url() . '/fR9z3I4PWXT3qx-mega-menu/scripts/divi-mega-menu.min.js', array('jquery'), DE_DMM_VERSION, true );
     }
     add_action( 'wp_enqueue_scripts', 'load_mm_2_scripts', 99 );
     
@@ -84,7 +84,7 @@ if ($mydata['mega_menu_injection_method'] == "ajax") {
 include(DE_DMM_PATH . '/lib/mega-menu-default.php');
 
 function load_mm_3_scripts(){
-    wp_enqueue_script( 'divi-mega-menu-js', plugins_url() . '/divi-mega-menu/scripts/divi-mega-menu.min.js', array('jquery'), DE_DMM_VERSION, true );
+    wp_enqueue_script( 'divi-mega-menu-js', plugins_url() . '/fR9z3I4PWXT3qx-mega-menu/scripts/divi-mega-menu.min.js', array('jquery'), DE_DMM_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'load_mm_3_scripts', 99 );
 
@@ -131,7 +131,7 @@ if ( !function_exists( 'de_dmm_initialise_ext' ) ) {
 
 
 // function divi_mega_menu_js() {
-//     wp_enqueue_script( 'divi-mega-menu-script',  plugins_url() . '/divi-mega-menu/js/mega-menu.min.js', array(), DE_DMM_VERSION, true );
+//     wp_enqueue_script( 'divi-mega-menu-script',  plugins_url() . '/fR9z3I4PWXT3qx-mega-menu/js/mega-menu.min.js', array(), DE_DMM_VERSION, true );
 // }
 // add_action( 'wp_enqueue_scripts', 'divi_mega_menu_js' );
 
